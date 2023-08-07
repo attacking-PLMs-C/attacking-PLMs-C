@@ -1,5 +1,7 @@
 # Attacking pre-trained language models of code
-Our approach contains contains two parts: (1) probing tasks; (2) MindAC.
+This repository provides the code and data of the submitted paper: "Attacking Pre-Trained Language Models of Code with Multi-level Linguistic Representations"
+
+Our approach contains two parts: (1) probing tasks; (2) MindAC.
 
 # Requirements
 python                    3.8.13
