@@ -68,6 +68,14 @@ cd ../probing
 
 Deriving the related information from the ASTs by running "identifier_num.py", "ctrstatement_num.py", and "tree_width.py". Then run the "codebert.py --train_eval prob --layer n" to assess the ability of the n-th layer.
 
-Semantic probing tasks. 
+Semantic probing tasks. We need first to perform the semantic-preserving transformations, i.e. "WhileToFor" (Transformation2), "SwitchTrans" (Transformation7), and "WhileToFor" (Transformation3). 
+
+cd ./Transformation1
+
+run code_trans.py  # performing the transformation
+
+cd ..
+
+
 
 # MindAC
