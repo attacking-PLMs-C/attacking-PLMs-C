@@ -26,7 +26,7 @@ Devign dataset contains FFmpeg and QEMU datasets, which are available at https:/
 
 POJ-104 dataset is available at https://drive.google.com/file/d/0B2i-vWnOu7MxVlJwQXN6eVNONUU/view?resourcekey=0-Po3kiAifLfCCYnanCBDMHw
 
-# RQs
+# Research questions
 
 In this paper, we set three research questions: 
 
@@ -38,9 +38,25 @@ In this paper, we set three research questions:
 
 # Answer for RQ1: Probing tasks
 
+Before the probing tasks, we need to fine-tune the CodeBERT model.
+
+python codebert.py --train_eval train --layer 12
+
 We perform the probing tasks (i.e., 2 surface probing tasks, 3 syntax probing tasks and 3 probing tasks) on Devign dataset.
 
-Before performing the probing tasks, we use the 
+cd ./probing
+
+Surface probing tasks. Running the code in the "code_length" and "code_content" folders. For example, to perform "CodeLength" task, we need to run the following scripts:
+
+cd ./code_length
+
+python code_length.py  # labeling each code snippet according to its length
+
+python tokenization.py  
+
+python codebert.py --train_eval prob --layer 1  # evaluating the ability of the first layer
+
+Before performing the probing tasks, we use the
 
 
 # MindAC
