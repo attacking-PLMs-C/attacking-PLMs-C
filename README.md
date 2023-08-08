@@ -26,10 +26,21 @@ Devign dataset contains FFmpeg and QEMU datasets, which are available at https:/
 
 POJ-104 dataset is available at https://drive.google.com/file/d/0B2i-vWnOu7MxVlJwQXN6eVNONUU/view?resourcekey=0-Po3kiAifLfCCYnanCBDMHw
 
-# Probing tasks
+# RQs
+
+In this paper, we set three research questions: 
+
+(1) RQ1: Which layers of the victim models are significant for linguistic features learning?
+
+(2) RQ2: How effective is the linguistic representations-based attack compared with the state-of-the-art baselines?
+
+(3) RQ3: Can we improve the robustness of victim models with adversarial examples?
+
+# Answer for RQ1: Probing tasks
+
 We perform the probing tasks (i.e., 2 surface probing tasks, 3 syntax probing tasks and 3 probing tasks) on Devign dataset.
 
-
+Before performing the probing tasks, we use the 
 
 
 # MindAC
