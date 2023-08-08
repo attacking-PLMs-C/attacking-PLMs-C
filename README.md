@@ -56,7 +56,18 @@ python tokenization.py
 
 python codebert.py --train_eval prob --layer 1  # evaluating the ability of the first layer
 
-Before performing the probing tasks, we use the
+Syntax probing tasks. We need to parser the ASTs from the code snippets by Joern. 
 
+cd ../preprocess
+
+run code_preprocessing.py  # filtering the comments in the code snippets
+
+run graph_generation.py  # generating the ".dot" files of ASTs and CFGs
+
+cd ../probing
+
+Deriving the related information from the ASTs by running "identifier_num.py", "ctrstatement_num.py", and "tree_width.py". Then run the "codebert.py --train_eval prob --layer n" to assess the ability of the n-th layer.
+
+Semantic probing tasks. 
 
 # MindAC
