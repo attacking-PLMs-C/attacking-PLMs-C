@@ -76,6 +76,14 @@ run code_trans.py  # performing the transformation
 
 cd ..
 
+Run the code in "switch_trans", "for_to_while", and "while_to_for". For example:
 
+cd ./switch_trans
+
+python switch_trans.py # labeling a code snippet as "1" if it is transformed or "0" if it is not
+
+python tokenization.py
+
+python codebert.py --train_eval prob --layer 1  # asess the ability of the 1 layer
 
 # MindAC
