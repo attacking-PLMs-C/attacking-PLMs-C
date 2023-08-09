@@ -37,9 +37,11 @@ Before the probing tasks, we need to fine-tune the CodeBERT model.
 python codebert.py --train_eval train --layer 12
 
 We perform the probing tasks (i.e., 2 surface probing tasks, 3 syntax probing tasks and 3 probing tasks) on Devign dataset.
+
 ```
 cd ./probing
 ```
+
 Surface probing tasks. Running the code in the "code_length" and "code_content" folders. For example, to perform "CodeLength" task, we need to run the following scripts:
 
 cd ./code_length
