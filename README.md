@@ -37,7 +37,6 @@ In this paper, we set three research questions:
 (3) RQ3: Can we improve the robustness of victim models with adversarial examples?
 
 # Answer for RQ1: Probing tasks
-
 Before the probing tasks, we need to fine-tune the CodeBERT model.
 
 python codebert.py --train_eval train --layer 12
@@ -87,5 +86,8 @@ python tokenization.py
 python codebert.py --train_eval prob --layer 1  # asess the ability of the 1 layer
 
 # Answer to RQ2
+cd ./attack
 
 
+
+# Answer to RQ3
