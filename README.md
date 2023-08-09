@@ -118,7 +118,7 @@ sh mutation.sh  # running the script first
 sh mutation1.sh
 sh mutation2.sh  # running the sh mutation1.sh and sh mutation2.sh in parallel
 ```
-### attacking
+### Attacking
 ```
 python fuzzing.py
 ```
@@ -143,7 +143,7 @@ sh mutation.sh  # running the script first
 sh mutation1.sh
 sh mutation2.sh  # running the sh mutation1.sh and sh mutation2.sh in parallel
 ```
-### attacking
+### Attacking
 ```
 python fuzzing.py
 ```
