@@ -44,43 +44,40 @@ cd ./probing
 
 Surface probing tasks. Running the code in the "code_length" and "code_content" folders. For example, to perform "CodeLength" task, we need to run the following scripts:
 
+```
 cd ./code_length
-
 python code_length.py  # labeling each code snippet according to its length
-
 python tokenization.py  
-
 python codebert.py --train_eval prob --layer 1  # evaluating the ability of the first layer
+```
 
 Syntax probing tasks. We need to parser the ASTs from the code snippets by Joern. 
 
+```
 cd ../preprocess
-
 run code_preprocessing.py  # filtering the comments in the code snippets
-
 run graph_generation.py  # generating the ".dot" files of ASTs and CFGs
-
 cd ../probing
+```
 
 Deriving the related information from the ASTs by running "identifier_num.py", "ctrstatement_num.py", and "tree_width.py". Then run the "codebert.py --train_eval prob --layer n" to assess the ability of the n-th layer.
 
 Semantic probing tasks. We need first to perform the semantic-preserving transformations, i.e. "WhileToFor" (Transformation2), "SwitchTrans" (Transformation7), and "WhileToFor" (Transformation3). 
 
+```
 cd ./Transformation1
-
 run code_trans.py  # performing the transformation
-
 cd ..
+```
 
 Run the code in "switch_trans", "for_to_while", and "while_to_for". For example:
 
+```
 cd ./switch_trans
-
 python switch_trans.py # labeling a code snippet as "1" if it is transformed or "0" if it is not
-
 python tokenization.py
-
 python codebert.py --train_eval prob --layer 1  # asess the ability of the 1 layer
+```
 
 # Answer to RQ2
 cd ./attack
