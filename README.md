@@ -42,7 +42,7 @@ We perform the probing tasks (i.e., 2 surface probing tasks, 3 syntax probing ta
 cd ./probing
 ```
 
-##Surface probing tasks
+## Surface probing tasks
 Running the code in the "code_length" and "code_content" folders. For example, to perform "CodeLength" task, we need to run the following scripts:
 
 ```
@@ -52,10 +52,10 @@ python tokenization.py
 python codebert.py --train_eval prob --layer 1  # evaluating the ability of the first layer
 ```
 
-##Syntax probing tasks
+## Syntax probing tasks
 We need to parser the ASTs from the code snippets by Joern. 
 
-###Parsing the code
+### Parsing the code
 ```
 cd ../preprocess
 run code_preprocessing.py  # filtering the comments in the code snippets
@@ -69,7 +69,7 @@ Deriving the related information from the ASTs by running "identifier_num.py", "
 codebert.py --train_eval prob --layer n" to assess the ability of the n-th layer
 ```
 
-##Semantic probing tasks
+## Semantic probing tasks
 We need first to perform the semantic-preserving transformations, i.e. "WhileToFor" (Transformation2), "SwitchTrans" (Transformation7), and "WhileToFor" (Transformation3). 
 
 ```
