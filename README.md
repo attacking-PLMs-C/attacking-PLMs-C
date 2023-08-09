@@ -107,8 +107,15 @@ cd ./dataset
 python proprecess.py # split the dataset into training set, validation set, and testing set
 cd ../
 python tokenization.py
-python codebert.py # fine-tuning the 
+python codebert.py # fine-tuning CodeBERT on Devign dataset
 ```
 
+
+
+### Attacking the GraphCodeBERT
+
+
+
+## Clone Detection
 
 # Answer to RQ3
