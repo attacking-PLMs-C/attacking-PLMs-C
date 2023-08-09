@@ -53,7 +53,7 @@ python codebert.py --train_eval prob --layer 1  # evaluating the ability of the 
 ```
 
 ## Syntax probing tasks
-We need to parser the ASTs from the code snippets by Joern. 
+We need to parser the ASTs from the code snippets by Joern.
 
 ### Parsing the code
 ```
@@ -66,7 +66,7 @@ cd ../probing
 Deriving the related information from the ASTs by running "identifier_num.py", "ctrstatement_num.py", and "tree_width.py". Then run the following script:
 
 ```
-codebert.py --train_eval prob --layer n" to assess the ability of the n-th layer
+codebert.py --train_eval prob --layer n # assess the ability of the n-th layer
 ```
 
 ## Semantic probing tasks
@@ -84,7 +84,7 @@ Run the code in "switch_trans", "for_to_while", and "while_to_for". For example:
 cd ./switch_trans
 python switch_trans.py # labeling a code snippet as "1" if it is transformed or "0" if it is not
 python tokenization.py
-python codebert.py --train_eval prob --layer 1  # asess the ability of the 1 layer
+python codebert.py --train_eval prob --layer 1  # asessing the ability of the 1 layer
 ```
 
 # Answer to RQ2
