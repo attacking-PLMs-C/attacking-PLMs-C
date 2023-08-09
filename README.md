@@ -92,5 +92,23 @@ python codebert.py --train_eval prob --layer 1  # asessing the ability of the 1 
 cd ./attack
 ```
 
+## Vulnerability Prediction
+```
+cd ./vulnerability prediction
+```
+### Attacking the CodeBERT
+```
+cd ./CodeBERT
+```
+Downloading the Devign dataset and putting the "function.json" file into the "dataset" folder.
+
+```
+cd ./dataset
+python proprecess.py # split the dataset into training set, validation set, and testing set
+cd ../
+python tokenization.py
+python codebert.py # fine-tuning the 
+```
+
 
 # Answer to RQ3
