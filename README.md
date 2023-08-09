@@ -92,7 +92,7 @@ python codebert.py --train_eval prob --layer 1  # asessing the ability of the 1 
 cd ./attack
 ```
 
-## Vulnerability Prediction
+## Vulnerability prediction
 ```
 cd ./vulnerability prediction
 ```
@@ -104,13 +104,23 @@ Downloading the Devign dataset and putting the "function.json" file into the "da
 
 ```
 cd ./dataset
-python proprecess.py # split the dataset into training set, validation set, and testing set
+python proprecess.py # spliting the dataset into training set, validation set, and testing set
 cd ../
 python tokenization.py
 python codebert.py # fine-tuning CodeBERT on Devign dataset
+sh mkdir.sh
+python original_cases.py  #  obtaining the code snippets which are correctly predicted by the fine-tuned CodeBERT
 ```
-
-
+### Attacking example generation
+```
+sh mutation.sh  # running the script first
+sh mutation1.sh
+sh mutation2.sh  # running the sh mutation1.sh and sh mutation2.sh in parallel
+```
+### attacking
+```
+python fuzzing.py
+```
 
 ### Attacking the GraphCodeBERT
 
