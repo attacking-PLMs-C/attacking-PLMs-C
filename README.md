@@ -149,5 +149,7 @@ python fuzzing.py
 ```
 
 ## Clone Detection
+Script running refers to attacks against vulnerability prediction.
 
 # Answer to RQ3
+Running the corresponding scrips on the training sets, augmenting the training sets with the generated adversarial examples to obtain the "adversarial training sets". Fine-tuning the victim models on the "adversarial training sets". Referring to the attacks in RQ2.
