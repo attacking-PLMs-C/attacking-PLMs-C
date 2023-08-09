@@ -4,6 +4,7 @@ This repository provides the code and data of the submitted paper: "Attacking Pr
 Our approach contains two parts: (1) probing tasks; (2) MindAC.
 
 # Requirements
+'''
 python                    3.8.13
 
 numpy                     1.21.2
@@ -19,6 +20,7 @@ scikit-learn              1.0.1
 transformers              4.20.1
 
 TXL                       v10.8 (7.5.20) 
+'''
 
 # Datasets
 We experiment on two open source C/C++ datasets: (1) Devign dataset; (2) POJ-104 dataset.
