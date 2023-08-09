@@ -102,6 +102,7 @@ cd ./CodeBERT
 ```
 Downloading the Devign dataset and putting the "function.json" file into the "dataset" folder.
 
+### Fine-tuning
 ```
 cd ./dataset
 python proprecess.py # spliting the dataset into training set, validation set, and testing set
@@ -123,8 +124,29 @@ python fuzzing.py
 ```
 
 ### Attacking the GraphCodeBERT
+```
+cd ../GraphCodeBERT
+```
 
-
+### Fine-tuning
+```
+cd ./dataset
+python proprecess.py # spliting the dataset into training set, validation set, and testing set
+cd ../
+sh run.sh # fine-tuning GraphCodeBERT on Devign dataset
+sh mkdir.sh
+python original_cases.py  #  obtaining the code snippets which are correctly predicted by the fine-tuned CodeBERT
+```
+### Attacking example generation
+```
+sh mutation.sh  # running the script first
+sh mutation1.sh
+sh mutation2.sh  # running the sh mutation1.sh and sh mutation2.sh in parallel
+```
+### attacking
+```
+python fuzzing.py
+```
 
 ## Clone Detection
 
