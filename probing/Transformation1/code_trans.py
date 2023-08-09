@@ -23,7 +23,7 @@ if __name__ == "__main__":
         # if i % 2 == 1:
         #     subprocess.check_output('cp ' + path + ' ./not_mutated_code', shell=True)
         # elif i % 2 == 0:
-        subprocess.check_output('./rename.sh ' + path + ' ' + fname + ' 1', shell=True)
+        subprocess.check_output('./rename.sh ' + path + ' ' + fname + ' 2', shell=True)
         # print(path)
         # break
         bar.update()
